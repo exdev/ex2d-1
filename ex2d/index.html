@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<base href="http://ex-dev.com/ex2d-1" />
+
+<meta charset="UTF-8" />
+<title>ex2D v1.X &lsaquo; exDev Studio</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/style.css" />
+
+
+		<link rel="shortcut icon" href="http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/cache/1321735885_favicon.ico" />
+
+<!-- Template stylesheet -->
+
+ 
+
+ 
+
+<meta name='robots' content='noindex,nofollow' />
+
+<link rel='stylesheet' id='jqueryui_css-css'  href='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/css/jqueryui/custom.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='screen_css-css'  href='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/css/screen.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox_css-css'  href='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/fancybox/jquery.fancybox-1.3.0.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs_css-css'  href='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/video-js.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='vim_css-css'  href='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/skins/vim.css?ver=1.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/jquery-ui.js?ver=1.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/fancybox/jquery.fancybox-1.3.0.js?ver=1.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/jquery.easing.js?ver=1.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/jquery.nivo.slider.js?ver=1.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/anythingSlider.js?ver=1.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/hint.js?ver=1.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/jquery.validate.js?ver=1.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/cufon.js?ver=1.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/browser.js?ver=1.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/video.js?ver=1.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/jquery.tipsy.js?ver=1.1'></script>
+<script type='text/javascript' src='http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/js/custom.js?ver=1.1'></script>
+
+ 
+
+<link rel='next' title='ex2D Videos' href='http://ex-dev.com/ex2d-1/ex2d/ex2d-videos/' />
+
+<link rel='canonical' href='http://ex-dev.com/ex2d-1/ex2d/' />
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/css/ie7.css?v=1.1" type="text/css" media="all"/>
+<![endif]-->
+
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/css/ie?v=1.1.css" type="text/css" media="all"/>
+<![endif]-->
+
+<style>
+body #header_wrapper
+{
+	background: #26a8ad url('http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/header_bg.png') no-repeat top center;
+}
+
+body #header_pattern
+{
+	background: transparent url('http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/skins/square2_pattern.png') repeat;
+}
+
+body.home #header_wrapper
+{
+	background: #26a8ad url('http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/header_bg.png') no-repeat top center;
+}
+
+body.home #header_pattern
+{
+	background: transparent url('http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/skins/square2_pattern.png') repeat;
+}
+
+#menu_wrapper .nav ul li > a, #menu_wrapper div .nav li > a
+{
+	color: #ffffff;
+}
+
+h1,h2,h3,h4,h5,h6,h1.tagline_header { color:#555555; }
+
+
+h1 { font-size:38px; }
+
+h2 { font-size:34px; }
+
+h3 { font-size:30px; }
+
+h4 { font-size:28px; }
+
+h5 { font-size:24px; }
+
+h6 { font-size:22px; }
+
+body { color:#666666; }
+
+a { color:#21749b; }
+
+a:hover, a:active { color:#3587ad; }
+
+input[type=submit], input[type=button], a.button { 
+	background: #07418d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#83a0c6), to(#07418d));
+	background: -moz-linear-gradient(top,  #83a0c6,  #07418d);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#83a0c6', endColorstr='#07418d');
+}
+input[type=submit]:active, input[type=button]:active, a.button:active
+{
+	background: #07418d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#07418d), to(#83a0c6));
+	background: -moz-linear-gradient(top,  #07418d,  #83a0c6);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#83a0c6', endColorstr='#07418d');
+}
+
+input[type=submit], input[type=button], a.button { 
+	color: #ffffff;
+}
+input[type=submit]:hover, input[type=button]:hover, a.button:hover
+{
+	color: #ffffff;
+}
+
+input[type=submit], input[type=button], a.button { 
+	border: 1px solid #07418d;
+}
+
+#footer, #footer ul { color:#cccccc; }
+
+#footer a { color:#ffffff; }
+
+#footer a:hover, #footer a:active { color:#ffffff; }
+</style>
+
+
+
+</head>
+
+
+<body class="page page-id-83 page-parent page-template-default">
+	
+	<!-- Begin template wrapper -->
+	<div id="wrapper">
+			
+		<!-- Begin header -->
+		<div id="header_wrapper">
+			<div id="top_bar">
+					<div class="logo">
+						<!-- Begin logo -->
+					
+												
+						<a id="custom_logo" href="http://ex-dev.com/ex2d-1"><img src="http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/cache/1321579124_exdev_logo_h55.png" alt=""/></a>
+						
+						<!-- End logo -->
+					</div>
+					
+					<!-- Begin main nav -->
+					<div id="menu_wrapper">
+					
+					    <div class="menu-mainnavigator-container"><ul id="main_menu" class="nav"><li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-148"><a href="http://www.ex-dev.com/">Home</a></li>
+<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-83 current_page_item menu-item-87"><a href="http://ex-dev.com/ex2d-1/ex2d/">ex2D v1.X</a></li>
+<li id="menu-item-220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-220"><a href="http://ex-dev.com/ex2d-1/showcase/">Showcase</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://ex-dev.com/ex2d-1/exvim/">exVim</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://ex-dev.com/ex2d-1/exsdk/">exSDK</a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://ex-dev.com/ex2d-1/about/">About</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="http://ex-dev.com/ex2d-1/contact/">Contact</a></li>
+<li id="menu-item-114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-114"><a href="http://abitgames.com">aBit Games</a></li>
+</ul></div>					
+					</div>
+					<!-- End main nav -->
+					
+				</div>
+				
+				<br class="clear"/>
+		<div class="page_caption">
+			<div class="caption_inner">
+				<div class="caption_header">
+					<h1 class="cufon">ex2D v1.X</h1>
+				</div>
+				
+							</div>
+		</div>
+		
+		<div id="header_pattern"></div>
+		
+		</div>
+
+		<!-- Begin content -->
+		<div id="content_wrapper">
+			
+			<div class="inner">
+			
+				<!-- Begin main content -->
+				<div class="inner_wrapper">
+				
+				
+										
+											<div class="sidebar_content ">
+										
+							
+					
+						<p style="text-align: center;"><img class="size-full aligncenter" title="ex2D_banner" alt="" src="http://ex-dev.com/ex2d-1/wp-content/uploads/2011/11/banner660.png" width="660" height="150" /></p>
+<p style="text-align: center;"><input type="button" class="button small left" style="background: -webkit-gradient(linear, left top, left bottom, from(#fea35a), to(#fe7201));background: -moz-linear-gradient(top,  #fea35a,  #fe7201);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#fea35a', endColorstr='#fe7201');border:1px solid #e56701;color:#ffffff;" value="Try ex2D" onclick="window.open('http://ex-dev.com/ex2d-1/ex2d-homepage/try-ex2d-for-free/', '_self')"/><input type="button" class="button small left" style="background: -webkit-gradient(linear, left top, left bottom, from(#5989ac), to(#004a80));background: -moz-linear-gradient(top,  #5989ac,  #004a80);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#5989ac', endColorstr='#004a80');border:1px solid #004373;color:#ffffff;" value="Buy from AssetStore - $35" onclick="window.open('http://u3d.as/content/ex-dev-team/ex2d-v1-0-0/2eJ', '_self')"/><input type="button" class="button small left" style="background: -webkit-gradient(linear, left top, left bottom, from(#5989ac), to(#004a80));background: -moz-linear-gradient(top,  #5989ac,  #004a80);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#5989ac', endColorstr='#004a80');border:1px solid #004373;color:#ffffff;" value="Buy from our web store - $35" onclick="window.open('http://sites.fastspring.com/exdev/product/ex2dindie', '_self')"/></p>
+<p style="text-align: center;"><input type="button" class="button small left" style="background: -webkit-gradient(linear, left top, left bottom, from(#a9ca7b), to(#7aad34));background: -moz-linear-gradient(top,  #a9ca7b,  #7aad34);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9ca7b', endColorstr='#7aad34');border:1px solid #6e9c2f;color:#ffffff;" value="Documentation" onclick="window.open('http://ex-dev.com/ex2d-1/ex2d/wiki', '_self')"/><input type="button" class="button small left" style="background: -webkit-gradient(linear, left top, left bottom, from(#a9ca7b), to(#7aad34));background: -moz-linear-gradient(top,  #a9ca7b,  #7aad34);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9ca7b', endColorstr='#7aad34');border:1px solid #6e9c2f;color:#ffffff;" value="Script Reference" onclick="window.open('http://ex-dev.com/ex2d-1/ex2d/script_ref', '_self')"/><input type="button" class="button small left" style="background: -webkit-gradient(linear, left top, left bottom, from(#c06063), to(#9e0b0f));background: -moz-linear-gradient(top,  #c06063,  #9e0b0f);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c06063', endColorstr='#9e0b0f');border:1px solid #8e0a0d;color:#ffffff;" value="Submit issues" onclick="window.open('https://github.com/jwu/ex2D_Runtime/issues?sort=created&amp;direction=desc&amp;state=open', '_self')"/></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Links To Get Started</h2>
+<style>
+			.pp_list.play_alt ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/play_alt_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list play_alt">
+<ul>
+<li><a href="http://ex-dev.com/ex2d">ex2D v2 Homepage</a></li>
+<li><a href="http://ex-dev.com/ex2d-1/ex2d/wiki">ex2D Documentation</a></li>
+<li><a href="http://ex-dev.com/ex2d-1/ex2d/script_ref">ex2D Script Reference</a></li>
+<li><a href="https://github.com/jwu/ex2D_Runtime">ex2D Runtime Source Code</a></li>
+<li><a href="http://forum.unity3d.com/threads/101811-ex2D-the-best-2D-sprite-solution-for-Unity-RELEASED">ex2D in Unity Forum</a></li>
+<li><a href="http://eepurl.com/hapI-/" target="_blank">Sign up for ex2D mailing list!</a></li>
+</ul>
+</div>
+<h2>Downloads</h2>
+<style>
+			.pp_list.play_alt ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/play_alt_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list play_alt">
+<ul>
+<li><a href="http://ex-dev.com/ex2d-1/downloads/ex2d_doc.zip">Offline Documentation</a></li>
+<li><a href="http://ex-dev.com/ex2d-1/downloads/ex2d_script_ref.zip">Offline Script Reference</a></li>
+<li><a href="http://ex-dev.com/ex2d-1/ex2d-homepage/try-ex2d-for-free/">Get Evaluation</a></li>
+</ul>
+</div>
+<h2>Misc</h2>
+<style>
+			.pp_list.play_alt ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/play_alt_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list play_alt">
+<ul>
+<li><a href="http://ex-dev.com/ex2d-1/ex2d-homepage/7-reasons-to-choose-ex2d">7 Reasons To Choose ex2D</a></li>
+<li><a href="http://ex-dev.com/ex2d-1/ex2d-homepage/ex2d-videos">Video Tutorials</a></li>
+<li><a href="http://ex-dev.com/ex2d-1/ex2d/how-to-use-ex2d-pro-version/" target="_blank">How to use ex2D Pro (Source code included version)</a></li>
+</ul>
+</div>
+<h2> </h2>
+<h2>Overview</h2>
+<p>ex2D is a highly integrated 2D-sprite-related development extension for Unity. It aims at providing<br /> high performance 2D sprite/UI solution inside Unity, with a specific focus on creating tons of<br /> cutting-edge sprite animations and other content in complicated Unity scenes, while still maintaining<br /> great performance on mobile devices.</p>
+<p><center><br /> <img alt="" src="http://ex-dev.com/ex2d-1/wp-content/uploads/2011/11/shot1.png" /></center>
+<p>ex2D includes several editor class that runs as view tabs inside Unity, to help developers making<br /> 2D assets easily. They are Atlas Editor, Font Editor, SpriteAnimation Editor, the upcoming Tile<br /> Map Editor and 2D Skinning Editor. All the editors are written by C# script and directly run in Unity.</p>
+<p>ex2D follows the Unity working pipeline standard closely. Unlike other 2D plugins in Unity which directly<br /> saves 2D resource in Components, we use the ScriptableObject to handle most of the 2D resource<br /> (Atlas, Sprite Animation, Bitmap Font, &#8230; ). In this way, ex2D generates assets that easily reusable<br /> and manageable for content-rich projects. We also design several Components to reference these data when<br /> editing the scene and runtime scripting. Following the advanced asset listening technique in ex2D,<br /> developers will not need to worry about data out of the date, they will sync automatically.</p>
+<p>ex2D is highly optimized for mobile devices, the code is carefully written to prevent heap allocating<br /> and produce less draw calls.</p>
+<div class="styled_box_title" style="background: -webkit-gradient(linear, left top, left bottom, from(#336e99), to(#004a80));background: -moz-linear-gradient(top,  #336e99,  #004a80);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#336e99', endColorstr='#004a80');border:1px solid #1a5c8d;color:#ffffff;width:95%;">ex2D Compatibility</div>
+<div class="styled_box_content" style="border:1px solid #1a5c8d;border-top:0;width:95%">ex2D works with both the free and Pro versions of Unity! Fully tested on Unity 3.4.2 for PC, Mac, Web, iOS and Android deveices.</div>
+<p><center><br /> <img alt="" src="http://ex-dev.com/ex2d-1/wp-content/uploads/2011/11/shot2.png" /></center>
+<p>&nbsp;</p>
+<h2>Features</h2>
+<h4>Atlas Editor</h4>
+<style>
+			.pp_list.arrow_right_alt1 ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/arrow_right_alt1_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list arrow_right_alt1">
+<ul>
+<li>Pack textures into texture atlas in an editor window inside Unity.</li>
+<li>Can manually move, add and remove textures in atlas.</li>
+<li>Automatically detect atlas changes and apply to the scene immediately.</li>
+<li>Generate atlas asset under the standard of ScriptableObject in Unity.</li>
+</ul>
+</div>
+<p><center><br /> <img alt="" src="http://ex-dev.com/ex2d-1/wp-content/uploads/2011/11/shot3.png" /></center>
+<p>&nbsp;</p>
+<h4>Sprite Component</h4>
+<style>
+			.pp_list.arrow_right_alt1 ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/arrow_right_alt1_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list arrow_right_alt1">
+<ul>
+<li>Add this component to any GameObject to turn it into a sprite.</li>
+<li>You can drag and drop texture file to the Sprite Component. The Sprite Component will detect if the texture is included in any?atlas asset and choose the proper asset. If the texture is not in any atlas, it will just use the original texture file.</li>
+<li>Scale sprites in game without breaking dynamic batching.</li>
+<li>Choose different Anchor position for aligning the sprites in different type of Sprite Animation.</li>
+<li>Support different camera direction (XY, XZ, YZ)</li>
+<li>Pixel Perfect render support.</li>
+<li>Layer system to help Designer and Artist sort out the rendering order of all sprites in the scene.</li>
+<li>Automatically adjust the collider size when the sprite size changed.</li>
+</ul>
+</div>
+<h4>Sprite Animation Clip Editor</h4>
+<style>
+			.pp_list.arrow_right_alt1 ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/arrow_right_alt1_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list arrow_right_alt1">
+<ul>
+<li>User friendly interface.</li>
+<li>Scale and scroll enabled time line editor.</li>
+<li>Move, add, remove and insert Frame Element by dragging and dropping them directly.</li>
+<li>Adjustable single frame length to make animation creating more versatile.</li>
+<li>Support adding animation events directly in the timeline editor.</li>
+<li>Preview animation result in the editor.</li>
+</ul>
+</div>
+<p><center><br /> <img alt="" src="http://ex-dev.com/ex2d-1/wp-content/uploads/2011/11/shot4.png" /></center>
+<p>&nbsp;</p>
+<h4>SpriteAnimation Component</h4>
+<style>
+			.pp_list.arrow_right_alt1 ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/arrow_right_alt1_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list arrow_right_alt1">
+<ul>
+<li>Reference sprite animation in script by clip names.</li>
+<li>Provide interface to control animation state ( play, pause, stop )</li>
+<li>Support pause/resume animation.</li>
+</ul>
+</div>
+<h4>Atlas Font Editor</h4>
+<style>
+			.pp_list.arrow_right_alt1 ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/arrow_right_alt1_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list arrow_right_alt1">
+<ul>
+<li>Support fonts export from BMfont and Hiero.</li>
+<li>Multiple fonts can be put together in one big texture atlas to save draw calls.</li>
+<li>Fonts can also be put together with other texture sprite to save draw calls.</li>
+<li>Manage fonts easily in atlas editor.</li>
+</ul>
+</div>
+<p><center><br /> <img alt="" src="http://ex-dev.com/ex2d-1/wp-content/uploads/2011/11/shot5.png" /></center>
+<p>&nbsp;</p>
+<h4>SpriteFont Component</h4>
+<style>
+			.pp_list.arrow_right_alt1 ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/arrow_right_alt1_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list arrow_right_alt1">
+<ul>
+<li>Support rendering text from Atlas Font asset and Bitmap Font asset.</li>
+<li>Support in game gradient color rendering (you can specify two colors for gradient and change them in runtime).</li>
+<li>Support in game outline rendering (outline width and color are adjustable).</li>
+<li>Support in game shadow rendering (offset and color are adjustable).</li>
+<li>Support multi-line text.</li>
+</ul>
+</div>
+<p><center><br /> <img alt="" src="http://ex-dev.com/ex2d-1/wp-content/uploads/2011/11/shot6.png" /></center>
+<p>&nbsp;</p>
+<h4>SpriteBorder Component</h4>
+<style>
+			.pp_list.arrow_right_alt1 ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/arrow_right_alt1_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list arrow_right_alt1">
+<ul>
+<li>Support rendering Scale9Grid texture from atlas or texture.</li>
+<li>Drag to resize.</li>
+<li>Editor to setting Scale9Grid texture.</li>
+</ul>
+</div>
+<p><center><br /> <img alt="" src="http://ex-dev.com/ex2d-1/wp-content/uploads/2011/11/shot7.png" /></center>
+<p>&nbsp;</p>
+<h4>SoftClip Component</h4>
+<style>
+			.pp_list.arrow_right_alt1 ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/arrow_right_alt1_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list arrow_right_alt1">
+<ul>
+<li>Clip sprite, text and other sprite type in rectangle.</li>
+<li>Easy to setup clip list.</li>
+</ul>
+</div>
+<p><center><br /> <img alt="" src="http://ex-dev.com/ex2d-1/wp-content/uploads/2011/11/shot8.png" /></center>
+<p>&nbsp;</p>
+<h4>Layer Manager</h4>
+<style>
+			.pp_list.arrow_right_alt1 ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/arrow_right_alt1_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list arrow_right_alt1">
+<ul>
+<li>A tree view layer editor helps user easily arrange and group layers.</li>
+<li>Can edit layer in both Prefab and GameObjects.</li>
+<li>Support inserting new items in a layer dynamically when running the game.</li>
+</ul>
+</div>
+<h2> </h2>
+<h2><a href="http://ex-dev.com/ex2d-1/wp-content/uploads/2011/11/shot9-e1322016509715.png"><img class="alignnone  wp-image-171" title="shot9" alt="" src="http://ex-dev.com/ex2d-1/wp-content/uploads/2011/11/shot9-e1322016509715.png" /></a></h2>
+<h2>Upcoming Features</h2>
+<style>
+			.pp_list.arrow_right_alt1 ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/arrow_right_alt1_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list arrow_right_alt1">
+<ul>
+<li>Tile Map Editor</li>
+<li>2D Skeleton Animation Editor</li>
+<li>2D Skinning Editor</li>
+<li>2D GUI System</li>
+</ul>
+</div>
+<h2>Researching</h2>
+<style>
+			.pp_list.arrow_right_alt1 ul li {
+				display: block;
+				background: url("http://ex-dev.com/ex2d-1/wp-content/themes/Lotus/images/icon/arrow_right_alt1_16x16.png") no-repeat top left;
+			}
+		</style>
+<div class="pp_list arrow_right_alt1">
+<ul>
+<li>Working pipeline for multiple resolution.</li>
+<li>Export the 2D scenes and assets in XML and JSON file format.</li>
+<li>Load the exported xml/json file in Cocoa2D.</li>
+<li>Load the exported xml/json file in Web-Browser(Html5).</li>
+</ul>
+</div>
+					
+											</div>
+										
+										
+						<div class="sidebar_wrapper ">
+						
+							<div class="sidebar_top "></div>
+						
+							<div class="sidebar  ">
+							
+								<div class="content">
+							
+									<ul class="sidebar_widget">
+																		</ul>
+								
+								</div>
+						
+							</div>
+							<br class="clear"/>
+					
+							<div class="sidebar_bottom "></div>
+						</div>
+									
+				</div>
+				<!-- End main content -->
+				
+				<br class="clear"/>
+			</div>
+			
+		</div>
+		<!-- End content -->
+			
+
+
+		</div>
+		
+		<div class="bottom_shadow"></div>
+		
+		<!-- Begin footer -->
+		<div id="footer">
+			<div id="footer_shadow"></div>
+		
+			<ul class="sidebar_widget">
+							</ul>
+			
+			<br class="clear"/>
+		
+			<div id="copyright">
+				<div class="standard_wrapper" style="text-shadow: 0 1px #000;">
+<div style="float:right">
+<a href="http://twitter.com/#!/abitgames" class="tipsy" title="Twitter" rel="nofollow">
+<img src="http://studio.ex-dev.com/wp-content/themes/Lotus/images/about_icon/twitter.png"/>
+</a>
+<a href="http://www.facebook.com/abitgames" class="tipsy" title="Facebook" rel="nofollow">
+<img src="http://studio.ex-dev.com/wp-content/themes/Lotus/images/about_icon/facebook.png"/>
+</a>
+<a href="http://feeds.feedburner.com/aBitGames" class="tipsy" title="RSS" rel="nofollow">
+<img src="http://studio.ex-dev.com/wp-content/themes/Lotus/images/about_icon/rss.png"/>
+</a>
+<a href="http://eepurl.com/hapI-/" class="tipsy" title="Newsletter" rel="nofollow">
+<img src="http://studio.ex-dev.com/wp-content/themes/Lotus/images/about_icon/mail.png"/>
+</a>
+</div>
+<div style="float:left;margin-top:10px">
+Copyright © 2011 exDev - ex-dev.com - All rights reserved.</div>
+<div style="float:left;margin-top:10px;margin-left:40px">
+If you have any questions, send mail to
+<a href="mailto:support@ex-dev.com">support@ex-dev.com</a></div>
+<br class="clear"/>
+
+</div>			</div>
+			
+		</div>
+		<!-- End footer -->
+		
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8694664-4']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</div></div>
+
+</body>
+</html>
+
