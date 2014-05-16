@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>manual:use_sprite_layer</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2011-08-17T16:16:24-0500"/>
+<meta name="keywords" content="manual,use_sprite_layer"/>
+<link rel="search" type="application/opensearchdescription+xml" href="../lib/exe/opensearch.html" title="ex2D Wiki"/>
+<link rel="start" href="../manual/use_sprite_layer.html"/>
+<link rel="contents" href="../manual/use_sprite_layer.html" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="../feed.html"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="../feed.mode.list.html?mode=list"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="../manual/use_sprite_layer.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="../manual/use_sprite_layer.html"/>
+<link rel="canonical" href="http://www.ex-dev.com/ex2d/wiki/doku.php?id=manual:use_sprite_layer"/>
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php.t.default.css"/>
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php.s.all_t.default.css"/>
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php.s.print_t.default.css"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='manual';var JSINFO = {"id":"manual:use_sprite_layer","namespace":"manual"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php.t.default.js"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="use_sprite_layer" id="use_sprite_layer">Use Sprite Layer</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="theory" id="theory">Theory</a></h4>
+<div class="level4">
+
+<p>
+When you add a Sprite or SpriteFont component in a GameObject by default, you will find ex2D automatically add Layer2D component either. What is this component and what does it do ?
+</p>
+
+<p>
+Layer2D is designed to let the user adjust the z order of the sprites in the scene.  There are two properties in Layer2D – Layer and Bias.
+</p>
+
+<p>
+The max number of layer in ex2D is 32. And you can calculate the z by the formular:
+</p>
+<pre class="code csharp">z <span class="sy0">=</span> <span class="br0">&#40;</span>Camera<span class="sy0">.</span><span class="me1">main</span><span class="sy0">.</span><span class="me1">farClipPlane</span> <span class="sy0">-</span> Camera<span class="sy0">.</span><span class="me1">main</span><span class="sy0">.</span><span class="me1">nearClipPlane</span><span class="br0">&#41;</span> <span class="sy0">/</span> maxLayer <span class="sy0">*</span> <span class="br0">&#40;</span> layer <span class="sy0">+</span> bias <span class="br0">&#41;</span><span class="sy0">;</span></pre>
+
+</div>
+
+<h4><a name="the_render_order" id="the_render_order">The Render Order</a></h4>
+<div class="level4">
+
+<p>
+Layer is the main coefficient in calculate z order. The larger value of the layer, the more depth the sprite will be. In other word, lower layer will render as if it is infront of the screen.
+</p>
+
+<p>
+Bias is a float value from 0.0 to 1.0. It affects the render order of the sprites with the same layer. The larger value means the sprites will go behind more.
+</p>
+
+</div>
+
+<h4><a name="free_adjustment" id="free_adjustment">Free Adjustment</a></h4>
+<div class="level4">
+
+<p>
+When the layer component added in a GameObject, you can&#039;t not drag the z-handle in the scene to adjust the GameObject&#039;s z position.
+</p>
+
+<p>
+If you would like to free control the GameObject/Sprite, remove the Layer2D component from it.
+</p>
+
+</div>
+</div>
+</body>
+</html>

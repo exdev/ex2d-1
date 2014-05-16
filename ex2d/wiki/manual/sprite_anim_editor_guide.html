@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>manual:sprite_anim_editor_guide</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="date" content="2011-08-23T01:56:01-0500"/>
+<meta name="keywords" content="manual,sprite_anim_editor_guide"/>
+<link rel="search" type="application/opensearchdescription+xml" href="../lib/exe/opensearch.html" title="ex2D Wiki"/>
+<link rel="start" href="../manual/sprite_anim_editor_guide.html"/>
+<link rel="contents" href="../manual/sprite_anim_editor_guide.html" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="../feed.html"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="../feed.mode.list.html?mode=list"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="../manual/sprite_anim_editor_guide.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="../manual/sprite_anim_editor_guide.html"/>
+<link rel="canonical" href="http://www.ex-dev.com/ex2d/wiki/doku.php?id=manual:sprite_anim_editor_guide"/>
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php.t.default.css"/>
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php.s.all_t.default.css"/>
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php.s.print_t.default.css"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='manual';var JSINFO = {"id":"manual:sprite_anim_editor_guide","namespace":"manual"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php.t.default.js"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#overview" class="toc">Overview</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#create_new_sprite_animation_clip" class="toc">Create New Sprite Animation Clip</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#open_sprite_animation_editor" class="toc">Open Sprite Animation Editor</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#import_animation_frame_to_timeline_view" class="toc">Import Animation Frame to Timeline View</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#resize_frame_length" class="toc">Resize Frame Length</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#add_remove_event_info" class="toc">Add/Remove Event Info</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#edit_event_info" class="toc">Edit Event Info</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#build_sprite_animation_clip" class="toc">Build Sprite Animation Clip</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="overview" id="overview">Overview</a></h1>
+<div class="level1">
+
+<p>
+The <strong>Sprite Animation Editor</strong> in ex2D allows you create and modify <strong>Sprite Animation Clip</strong> Assets directly inside Unity3D.
+</p>
+
+<p>
+<img src="../lib/exe/spriteanimationclipeditor.png" class="mediacenter" alt="" />
+</p>
+
+</div>
+<!-- EDIT1 SECTION "Overview" [1-206] -->
+<h1 class="sectionedit2"><a name="create_new_sprite_animation_clip" id="create_new_sprite_animation_clip">Create New Sprite Animation Clip</a></h1>
+<div class="level1">
+
+<p>
+Select a folder or file in <strong>Project Window</strong>. Right click the selected folder/file to popup the Menu. Choose <strong>Create → ex2D Sprite Animation Clip</strong>.
+</p>
+
+<p>
+<a href="../lib/exe/detail.id.manual_sprite_anim_editor_guide_media.manual_create_sprite_animation_clip.png.html?id=manual:sprite_anim_editor_guide&media=manual:create_sprite_animation_clip.png" class="media" title="manual:create_sprite_animation_clip.png"><img src="../lib/exe/create_sprite_animation_clip.png" class="mediacenter" alt="" /></a>
+</p>
+
+<p>
+You will see a wizard popup help you create an Sprite Animation Clip:
+</p>
+
+<p>
+<a href="../lib/exe/detail.id.manual_sprite_anim_editor_guide_media.manual_create_sp_anim_clip_wizard.png.html?id=manual:sprite_anim_editor_guide&media=manual:create_sp_anim_clip_wizard.png" class="media" title="manual:create_sp_anim_clip_wizard.png"><img src="../lib/exe/create_sp_anim_clip_wizard.png" class="mediacenter" alt="" /></a>
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Option </th><th class="col1"> Explanation </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Saved Path </td><td class="col1"> The saved directory path </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Asset Name </td><td class="col1"> The saved name of the new asset </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [577-692] -->
+<p>
+Click the <strong>Create</strong> button to create a new Sprite Animation Clip.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Create New Sprite Animation Clip" [207-761] -->
+<h1 class="sectionedit4"><a name="open_sprite_animation_editor" id="open_sprite_animation_editor">Open Sprite Animation Editor</a></h1>
+<div class="level1">
+
+<p>
+The <strong>Sprite Animation Editor</strong> can be opened from the <strong>ex2D→Editor→Sprite Animation Editor</strong> menu.
+</p>
+
+<p>
+<img src="../lib/exe/menu_ex2d_editor_spriteanimationeditor.png" class="mediacenter" alt="" />
+</p>
+
+<p>
+You can also open the atlas editor by select an Sprite Animation Clip you created, and click the <strong>Edit…</strong> button in the Inspector.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Open Sprite Animation Editor" [762-1111] -->
+<h1 class="sectionedit5"><a name="import_animation_frame_to_timeline_view" id="import_animation_frame_to_timeline_view">Import Animation Frame to Timeline View</a></h1>
+<div class="level1">
+
+<p>
+Select/Multi-Select Textures in <strong>Project Window</strong>, drag and drop them on the Timeline View Region in <strong>Sprite Animation Editor</strong> Window. The <strong>Sprite Animation Editor</strong> will add texture as Frame Info in Sprite Animation Clip.
+</p>
+
+<p>
+<img src="../lib/exe/dragtexturetospanimeditor.png" class="mediacenter" alt="" />
+</p>
+
+<p>
+After importing, you will see the texture show in the timeline view region. If the texture already store in Atlas, the background color of the frame will be magenta. If not yet in any Atlas, the color will be red, and you can not build this sprite animation clip when it includes <strong>Red</strong> frame. In other word, you must make sure all the imported texture already saved in Atlas.
+</p>
+
+<p>
+<img src="../lib/exe/frameinfo_bg_color.png" class="mediacenter" alt="" />
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Import Animation Frame to Timeline View" [1112-1874] -->
+<h1 class="sectionedit6"><a name="resize_frame_length" id="resize_frame_length">Resize Frame Length</a></h1>
+<div class="level1">
+
+<p>
+When you select a single Frame or select multiple continue Frame, a blue button will show up at the end of the selected frames. This is the frame length resize handle, you can click and drag it to adjust frame length.
+</p>
+
+<p>
+<img src="../lib/exe/resize_frameinfo.png" class="mediacenter" alt="" />
+</p>
+
+<p>
+In the meantime, you will see the selected frame will be activated in the FrameInfo Inspector section. You are allow to change the frame length here either.
+</p>
+
+<p>
+<img src="../lib/exe/frameinfo_editor.png" class="mediacenter" alt="" />
+</p>
+
+</div>
+<!-- EDIT6 SECTION "Resize Frame Length" [1875-2376] -->
+<h1 class="sectionedit7"><a name="add_remove_event_info" id="add_remove_event_info">Add/Remove Event Info</a></h1>
+<div class="level1">
+
+<p>
+At the top of Timeline View Region, there is a bar. This is Event Info View Region, it allow user add/remove animation event in it.
+</p>
+
+<p>
+<img src="../lib/exe/eventinfo_view.png" class="mediacenter" alt="" />
+</p>
+
+<p>
+When your mouse in the Event Info View Region, <strong>Double Click</strong> at the place you want to add Animation Event.
+</p>
+
+<p>
+<img src="../lib/exe/eventinfo_status.png" class="mediacenter" alt="" />
+</p>
+
+<p>
+There are three different color to represent status of the Animation Event:
+</p>
+<ul>
+<li class="level1"><div class="li"> red: The Method Name of the Event is empty, it will not triggered in the Game.</div>
+</li>
+<li class="level1"><div class="li"> green: The Method Name is filled, the Event is correct in settings.</div>
+</li>
+<li class="level1"><div class="li"> blue: The Event has been selected.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Add/Remove Event Info" [2377-3017] -->
+<h1 class="sectionedit8"><a name="edit_event_info" id="edit_event_info">Edit Event Info</a></h1>
+<div class="level1">
+
+<p>
+When select a <strong>single</strong> Animation Event, it will show some controllers in the EventInfo Inspector right below the Timeline View Region:
+</p>
+
+<p>
+<img src="../lib/exe/eventinfo_editor.png" class="mediacenter" alt="" />
+</p>
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Name           </th><th class="col1 leftalign"> Description                </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Time    </td><td class="col1"> The time to triggered the event </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Method Name    </td><td class="col1"> When the event triggered, the function name been passed in the <strong>SendMessage</strong> method</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> Param Type    </td><td class="col1"> The first parameter of the triggered Method (hide if choose NONE)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Send Message Options </td><td class="col1"> The Send Message Options </td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [3232-3571] -->
+<p>
+When you choose <strong>multiple</strong> Animation Event, only the time show for editing in the EventInfo Inspector
+</p>
+
+</div>
+<!-- EDIT8 SECTION "Edit Event Info" [3018-3678] -->
+<h1 class="sectionedit10"><a name="build_sprite_animation_clip" id="build_sprite_animation_clip">Build Sprite Animation Clip</a></h1>
+<div class="level1">
+
+<p>
+When we import the key frames, change frame info length and position, The <strong>Build</strong> button in Sprite Animation Editor will be activated. That means the Sprite Animation Clip is dirty and need rebuild. You can click the Build button or use the Hot Key Ctrl/Command + s to rebuild and save changes.
+</p>
+
+</div>
+<!-- EDIT10 SECTION "Build Sprite Animation Clip" [3679-] --></div>
+</body>
+</html>

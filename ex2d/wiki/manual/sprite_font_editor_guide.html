@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>manual:sprite_font_editor_guide</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="date" content="2011-08-23T02:03:57-0500"/>
+<meta name="keywords" content="manual,sprite_font_editor_guide"/>
+<link rel="search" type="application/opensearchdescription+xml" href="../lib/exe/opensearch.html" title="ex2D Wiki"/>
+<link rel="start" href="../manual/sprite_font_editor_guide.html"/>
+<link rel="contents" href="../manual/sprite_font_editor_guide.html" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="../feed.html"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="../feed.mode.list.html?mode=list"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="../manual/sprite_font_editor_guide.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="../manual/sprite_font_editor_guide.html"/>
+<link rel="canonical" href="http://www.ex-dev.com/ex2d/wiki/doku.php?id=manual:sprite_font_editor_guide"/>
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php.t.default.css"/>
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php.s.all_t.default.css"/>
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php.s.print_t.default.css"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='manual';var JSINFO = {"id":"manual:sprite_font_editor_guide","namespace":"manual"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php.t.default.js"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#overview" class="toc">Overview</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#create_new_bitmapfont" class="toc">Create New BitmapFont</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#open_bitmapfont_editor" class="toc">Open BitmapFont Editor</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#create_atlas_font" class="toc">Create Atlas Font</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="overview" id="overview">Overview</a></h1>
+<div class="level1">
+
+<p>
+The Font Editor in ex2D allows you import the font information made by <a href="http://slick.cokeandcode.com/demos/hiero.jnlp" class="urlextern" title="http://slick.cokeandcode.com/demos/hiero.jnlp"  rel="nofollow">Hiero</a> (Mac) and <a href="http://www.angelcode.com/products/bmfont/" class="urlextern" title="http://www.angelcode.com/products/bmfont/"  rel="nofollow">BMFont</a> (Windows),  build the Bitmap Font Asset for final Game.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "Overview" [1-271] -->
+<h1 class="sectionedit2"><a name="create_new_bitmapfont" id="create_new_bitmapfont">Create New BitmapFont</a></h1>
+<div class="level1">
+
+<p>
+Before create a BitmapFont Asset, you need to import/put Font Info exported from Hiero or BMFont. The exported Font Info includes: 
+</p>
+<ul>
+<li class="level1"><div class="li"> A Font Image: the texture stores all character you exported</div>
+</li>
+<li class="level1"><div class="li"> A txt/fnt File: a text file describe the information of each character in the image</div>
+</li>
+</ul>
+
+<p>
+<img src="../lib/images/smileys/icon_exclaim.gif" class="middle" alt=":!:" /><strong>Note:</strong> You must save the image as <acronym title="Portable Network Graphics">PNG</acronym> file format, and save the text file as txt/fnt file format.
+</p>
+
+<p>
+Select the txt/fnt font info file in <strong>Project Window</strong>. Right click the selected file to popup the Menu. Choose <strong>Create → ex2D BitmapFont</strong>.
+</p>
+
+<p>
+<a href="../lib/exe/detail.id.manual_sprite_font_editor_guide_media.manual_create_bitmapfont.png.html?id=manual:sprite_font_editor_guide&media=manual:create_bitmapfont.png" class="media" title="manual:create_bitmapfont.png"><img src="../lib/exe/create_bitmapfont.png" class="mediacenter" alt="" /></a>
+</p>
+
+<p>
+You will see a wizard popup help you create an BitmapFont:
+</p>
+
+<p>
+<a href="../lib/exe/detail.id.manual_sprite_font_editor_guide_media.manual_create_bitmapfont_wizard.png.html?id=manual:sprite_font_editor_guide&media=manual:create_bitmapfont_wizard.png" class="media" title="manual:create_bitmapfont_wizard.png"><img src="../lib/exe/create_bitmapfont_wizard.png" class="mediacenter" alt="" /></a>
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Option </th><th class="col1"> Explanation </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Saved Path </td><td class="col1"> The saved directory path </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Asset Name </td><td class="col1"> The saved name of the new asset </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [990-1106] -->
+<p>
+Click the <strong>Create</strong> button to create a new BitmapFont Asset.
+</p>
+
+<p>
+Once you create the BitmapFont Asset, the Editor will show the data like this:
+</p>
+
+<p>
+<img src="../lib/exe/bitmapfontinfoasset.png" class="mediacenter" alt="" />
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Create New BitmapFont" [272-1298] -->
+<h1 class="sectionedit4"><a name="open_bitmapfont_editor" id="open_bitmapfont_editor">Open BitmapFont Editor</a></h1>
+<div class="level1">
+
+<p>
+The <strong>BitmapFont Editor</strong> can be opened from the <strong>ex2D→Editor→BitmapFont Editor</strong> menu.
+</p>
+
+<p>
+<img src="../lib/exe/menu_ex2d_editor_bitmapfonteditor.png" class="mediacenter" alt="" />
+</p>
+
+<p>
+You can also open the atlas editor by select an Bitmap Font you created, and click the <strong>Edit…</strong> button in the Inspector.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Open BitmapFont Editor" [1299-1614] -->
+<h1 class="sectionedit5"><a name="create_atlas_font" id="create_atlas_font">Create Atlas Font</a></h1>
+<div class="level1">
+
+<p>
+You can directly use BitmapFont above. When you have 2 BitmapFont assets used in your game, they are in separated textures, so the draw call become two. If your BitmapFont renderer use the same material settings but just different texture, it is too waste to put them in 2 textures. For the reason to save draw call and save the size of texture, it is nice to put multiple BitmapFont in one texture, we call this <strong>Atlas Font</strong>.
+</p>
+
+<p>
+To create an Atlas Font, just follow the steps:
+</p>
+<ol>
+<li class="level1"><div class="li"> Create your BitmapFont assets by following the last section</div>
+</li>
+<li class="level1"><div class="li"> Create a new Atlas Asset or open an exists one in Atlas Editor</div>
+</li>
+<li class="level1"><div class="li"> Select the BitmapFont assets in Project Window, and drag them into the Atlas Editor</div>
+</li>
+<li class="level1"><div class="li"> Apply changes in Atlas Editor and Build the Atlas Asset</div>
+</li>
+<li class="level1"><div class="li"> You will find the new BitmapFont asset created in the same folder of Atlas. If your Atlas named FooBar, your BitmapFont asset named Hello, the Atlas Font will named FooBar - Hello.asset</div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT5 SECTION "Create Atlas Font" [1615-] --></div>
+</body>
+</html>

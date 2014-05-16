@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>manual:intro</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2011-08-14T05:42:23-0500"/>
+<meta name="keywords" content="manual,intro"/>
+<link rel="search" type="application/opensearchdescription+xml" href="../lib/exe/opensearch.html" title="ex2D Wiki"/>
+<link rel="start" href="../manual/intro.html"/>
+<link rel="contents" href="../manual/intro.html" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="../feed.html"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="../feed.mode.list.html?mode=list"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="../manual/intro.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="../manual/intro.html"/>
+<link rel="canonical" href="http://www.ex-dev.com/ex2d/wiki/doku.php?id=manual:intro"/>
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php.t.default.css"/>
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php.s.all_t.default.css"/>
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php.s.print_t.default.css"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='manual';var JSINFO = {"id":"manual:intro","namespace":"manual"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php.t.default.js"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#what_is_ex2d" class="toc">What is ex2D</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#features" class="toc">Features</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#atlas_editor" class="toc">Atlas Editor</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#sprite_component" class="toc">Sprite Component</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#sprite_animation_clip_editor" class="toc">Sprite Animation Clip Editor</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#spriteanimation_component" class="toc">SpriteAnimation Component</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#atlas_font_editor" class="toc">Atlas Font Editor</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#spritefont_component" class="toc">SpriteFont Component</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#upcoming_feature" class="toc">Upcoming Feature</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#researching" class="toc">Researching</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="what_is_ex2d" id="what_is_ex2d">What is ex2D</a></h1>
+<div class="level1">
+
+<p>
+ex2D is a highly integrated 2D-sprite-related development extension for Unity. It aims at providing high performance 2D sprite/UI solution inside Unity, with a specific focus on creating tons of cutting-edge sprite animations and other content in complicated Unity scenes, while still maintaining great performance on mobile devices.
+</p>
+
+<p>
+ex2D includes several editor class that runs as view tabs inside Unity, to help developers making 2D assets easily. They are Atlas Editor, Font Editor, SpriteAnimation Editor, the upcoming Tile Map Editor and 2D Skinning Editor. All the editors are written by C# script and directly run in Unity.
+</p>
+
+<p>
+ex2D follows the Unity working pipeline standard closely. Unlike other 2D plugins in Unity which directly saves 2D resource in Components, we use the ScriptableObject to handle most of the 2D resource (Atlas, Sprite Animation, Bitmap Font, … ). In this way, ex2D generates assets that easily reusable and manageable for content-rich projects. We also design several Components to reference these data when editing the scene and runtime scripting. <code>Following the advanced asset listening technique in ex2D, developers will not need to worry about data out of the date, they will sync automatically.</code>
+</p>
+
+<p>
+ex2D is highly optimized for mobile devices, the code is carefully written to prevent heap allocating  and produce less draw calls.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "What is ex2D" [1-1398] -->
+<h1 class="sectionedit2"><a name="features" id="features">Features</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT2 SECTION "Features" [1399-1422] -->
+<h2 class="sectionedit3"><a name="atlas_editor" id="atlas_editor">Atlas Editor</a></h2>
+<div class="level2">
+
+<p>
+<a href="../lib/exe/detail.id.manual_intro_media.atlaseditor.png.html?id=manual:intro&media=atlaseditor.png" class="media" title="atlaseditor.png"><img src="../lib/exe/atlaseditor.png" class="mediacenter" alt="" /></a>
+</p>
+<ul>
+<li class="level1"><div class="li"> Pack textures into texture atlas in an editor window inside Unity.</div>
+</li>
+<li class="level1"><div class="li"> It&#039;s possible to manually move, add and remove textures in atlas.</div>
+</li>
+<li class="level1"><div class="li"> Automatically detect atlas changes and apply to the scene immediately.</div>
+</li>
+<li class="level1"><div class="li"> Generate atlas asset under the standard of ScriptableObject in Unity.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Atlas Editor" [1423-1765] -->
+<h2 class="sectionedit4"><a name="sprite_component" id="sprite_component">Sprite Component</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Add this component to any GameObject to turn it into a sprite.</div>
+</li>
+<li class="level1"><div class="li"> You can drag and drop texture file to the Sprite Component. The Sprite Component will detect if the texture is included in any atlas asset and choose the proper asset. If the texture is not in any atlas, it will just use the original texture file.</div>
+</li>
+<li class="level1"><div class="li"> Scale sprites in game without breaking dynamic batching.</div>
+</li>
+<li class="level1"><div class="li"> Choose different Anchor position for aligning the sprites in different type of Sprite Animation.</div>
+</li>
+<li class="level1"><div class="li"> Support different camera direction (XY, XZ, YZ)</div>
+</li>
+<li class="level1"><div class="li"> Pixel Perfect render support.</div>
+</li>
+<li class="level1"><div class="li"> Layer system to help Designer and Artist sort out the rendering order of all sprites in the scene.</div>
+</li>
+<li class="level1"><div class="li"> Automatically adjust the collider size when the sprite size changed.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Sprite Component" [1766-2540] -->
+<h2 class="sectionedit5"><a name="sprite_animation_clip_editor" id="sprite_animation_clip_editor">Sprite Animation Clip Editor</a></h2>
+<div class="level2">
+
+<p>
+<a href="../lib/exe/detail.id.manual_intro_media.atlaseditor.png.html?id=manual:intro&media=atlaseditor.png" class="media" title="atlaseditor.png"><img src="../lib/exe/atlaseditor.png" class="mediacenter" alt="" /></a>
+</p>
+<ul>
+<li class="level1"><div class="li"> User friendly interface.</div>
+</li>
+<li class="level1"><div class="li"> Scale and scroll enabled time line editor.</div>
+</li>
+<li class="level1"><div class="li"> Move, add, remove and insert Frame Element by dragging and dropping them directly.</div>
+</li>
+<li class="level1"><div class="li"> Adjustable single frame length to make animation creating more versatile.</div>
+</li>
+<li class="level1"><div class="li"> Support adding animation events directly in the timeline editor.</div>
+</li>
+<li class="level1"><div class="li"> Preview animation result in the editor.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Sprite Animation Clip Editor" [2541-2963] -->
+<h2 class="sectionedit6"><a name="spriteanimation_component" id="spriteanimation_component">SpriteAnimation Component</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Reference sprite animation in script by clip names.</div>
+</li>
+<li class="level1"><div class="li"> Provide interface to control animation state ( play, pause, stop )</div>
+</li>
+<li class="level1"><div class="li"> Support pause/resume animation.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "SpriteAnimation Component" [2964-3166] -->
+<h2 class="sectionedit7"><a name="atlas_font_editor" id="atlas_font_editor">Atlas Font Editor</a></h2>
+<div class="level2">
+
+<p>
+<a href="../lib/exe/detail.id.manual_intro_media.atlasfont.jpg.html?id=manual:intro&media=atlasfont.jpg" class="media" title="atlasfont.jpg"><img src="../lib/exe/atlasfont.jpg" class="mediacenter" alt="" /></a>
+</p>
+<ul>
+<li class="level1"><div class="li"> Support fonts export from BMfont and Hiero.</div>
+</li>
+<li class="level1"><div class="li"> Multiple fonts can be put together in one big texture atlas to save draw calls.</div>
+</li>
+<li class="level1"><div class="li"> Fonts can also be put together with other texture sprite to save draw calls.</div>
+</li>
+<li class="level1"><div class="li"> Manage fonts easily in atlas editor.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Atlas Font Editor" [3167-3476] -->
+<h2 class="sectionedit8"><a name="spritefont_component" id="spritefont_component">SpriteFont Component</a></h2>
+<div class="level2">
+
+<p>
+<a href="../lib/exe/detail.id.manual_intro_media.spritefont.jpg.html?id=manual:intro&media=spritefont.jpg" class="media" title="spritefont.jpg"><img src="../lib/exe/spritefont.jpg" class="mediacenter" alt="" /></a>
+</p>
+<ul>
+<li class="level1"><div class="li"> Support rendering text from Atlas Font asset and Bitmap Font asset.</div>
+</li>
+<li class="level1"><div class="li"> Support in game gradient color rendering (you can specify two colors for gradient and change them in runtime).</div>
+</li>
+<li class="level1"><div class="li"> Support in game outline rendering (outline width and color are adjustable).</div>
+</li>
+<li class="level1"><div class="li"> Support in game shadow rendering (offset and color are adjustable).</div>
+</li>
+<li class="level1"><div class="li"> Support multi-line text.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "SpriteFont Component" [3477-3904] -->
+<h1 class="sectionedit9"><a name="upcoming_feature" id="upcoming_feature">Upcoming Feature</a></h1>
+<div class="level1">
+<ul>
+<li class="level1"><div class="li"> Tile Map Editor and Tile Map working pipeline</div>
+</li>
+<li class="level1"><div class="li"> 2D skeleton animation editor</div>
+</li>
+<li class="level1"><div class="li"> 2D Skinning editor</div>
+</li>
+<li class="level1"><div class="li"> 2D <acronym title="Graphical User Interface">GUI</acronym> editor</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "Upcoming Feature" [3905-4061] -->
+<h1 class="sectionedit10"><a name="researching" id="researching">Researching</a></h1>
+<div class="level1">
+<ul>
+<li class="level1"><div class="li"> Working pipeline for multiple resolution.</div>
+<ul>
+<li class="level2"><div class="li"> We plan to do auto-convert process from one platform(resolution) to target platform based on the directory hierarchy.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Export the 2D scenes and assets in xml and json file formation.</div>
+</li>
+<li class="level1"><div class="li"> Load the exported xml/json file in Cocoa2D.</div>
+</li>
+<li class="level1"><div class="li"> Load the exported xml/json file in Web-Browser(Html5).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "Researching" [4062-] --></div>
+</body>
+</html>

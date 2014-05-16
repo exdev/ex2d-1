@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>manual:create_sprite</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="date" content="2011-08-18T08:07:38-0500"/>
+<meta name="keywords" content="manual,create_sprite"/>
+<link rel="search" type="application/opensearchdescription+xml" href="../lib/exe/opensearch.html" title="ex2D Wiki"/>
+<link rel="start" href="../manual/create_sprite.html"/>
+<link rel="contents" href="../manual/create_sprite.html" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="../feed.html"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="../feed.mode.list.html?mode=list"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="../manual/create_sprite.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="../manual/create_sprite.html"/>
+<link rel="canonical" href="http://www.ex-dev.com/ex2d/wiki/doku.php?id=manual:create_sprite"/>
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php.t.default.css"/>
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php.s.all_t.default.css"/>
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php.s.print_t.default.css"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='manual';var JSINFO = {"id":"manual:create_sprite","namespace":"manual"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php.t.default.js"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="create_sprite" id="create_sprite">Create Sprite</a></h1>
+<div class="level1">
+
+<p>
+To create a sprite, you first Create an empty <strong>GameObject</strong> in the scene in Unity. Select the <strong>GameObject</strong> and choose the Menu Item: <strong>Component &gt; ex2D &gt; Sprite</strong>
+</p>
+
+<p>
+<img src="../lib/exe/menu_component_ex2d_sprite.png" class="mediacenter" alt="" />
+</p>
+
+<p>
+After you add the Sprite Component it will also add Mesh Renderer, Mesh Filter and Layer2D components. Your <strong>GameObject</strong> will look like this in Inspector:
+</p>
+
+<p>
+<img src="../lib/exe/inspector_sprite.png" class="mediacenter" alt="" />
+</p>
+
+</div>
+<!-- EDIT1 SECTION "Create Sprite" [2-455] -->
+<h1 class="sectionedit2"><a name="assign_a_texture" id="assign_a_texture">Assign a texture</a></h1>
+<div class="level1">
+
+<p>
+You can drag a texture from project to Texture Filed in Sprite Inspector.
+</p>
+
+<p>
+<img src="../lib/exe/addtexturetosprite.png" class="mediacenter" alt="" />
+</p>
+
+<p>
+If the texture is already in Atlas Assets ( More details, read <a href="../manual/atlas_editor_guide.html" class="wikilink1" title="manual:atlas_editor_guide">Atlas Editor Guide</a> ), it will automatically use the Atlas Texture in the Material, and find the index of the texture in this Atlas Asset.
+</p>
+
+<p>
+If the texture is not build in Atlas, it will directly use it in your Material.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Assign a texture" [456-] --></div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>misc:change_log</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="date" content="2011-08-23T00:37:04-0500"/>
+<meta name="keywords" content="misc,change_log"/>
+<link rel="search" type="application/opensearchdescription+xml" href="../lib/exe/opensearch.html" title="ex2D Wiki"/>
+<link rel="start" href="../misc/change_log.html"/>
+<link rel="contents" href="../misc/change_log.html" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="../feed.html"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="../feed.mode.list.html?mode=list"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="../misc/change_log.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="../misc/change_log.html"/>
+<link rel="canonical" href="http://www.ex-dev.com/ex2d/wiki/doku.php?id=misc:change_log"/>
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php.t.default.css"/>
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php.s.all_t.default.css"/>
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php.s.print_t.default.css"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='misc';var JSINFO = {"id":"misc:change_log","namespace":"misc"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php.t.default.js"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#change_log" class="toc">Change Log</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#v100" class="toc">v1.0.0</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#beta2" class="toc">beta2</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#beta" class="toc">beta</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="change_log" id="change_log">Change Log</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "Change Log" [1-26] -->
+<h2 class="sectionedit2"><a name="v100" id="v100">v1.0.0</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> New Features</div>
+</li>
+<li class="level1"><div class="li"> Changes</div>
+<ul>
+<li class="level2"><div class="li"> Create Atlas, Sprite Animation and Sprite Font through project menu</div>
+</li>
+<li class="level2"><div class="li"> Add auto-resize collision box option in exSprite </div>
+</li>
+<li class="level2"><div class="li"> Atlas Element index saved by texture name</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Fixed Bugs </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "v1.0.0" [27-270] -->
+<h2 class="sectionedit3"><a name="beta2" id="beta2">beta2</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> New Features</div>
+<ul>
+<li class="level2"><div class="li"> Support pixel-perfect in Sprite, SpriteFont</div>
+</li>
+<li class="level2"><div class="li"> Support multi-line text in SpriteFont</div>
+</li>
+<li class="level2"><div class="li"> Atlas view can zoom in/out in Atlas Editor</div>
+</li>
+<li class="level2"><div class="li"> Add Layer2D Component for better layer setup</div>
+</li>
+<li class="level2"><div class="li"> Add SpriteFont tracking, lineSpacing and textAlign</div>
+</li>
+<li class="level2"><div class="li"> Support unicode text</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Changes</div>
+<ul>
+<li class="level2"><div class="li"> Prevent adding same texture in different atlas</div>
+</li>
+<li class="level2"><div class="li"> Add drag drop Sprite Animation Clip in Sprite Animation Inspector</div>
+</li>
+<li class="level2"><div class="li"> Remove layer setup functions from SpriteBase, use Layer2D component instead</div>
+</li>
+<li class="level2"><div class="li"> Prevent adding same BitmapFont in the same atlas</div>
+</li>
+<li class="level2"><div class="li"> Add useMultiline property in SpriteFont</div>
+</li>
+<li class="level2"><div class="li"> Sprite Animation Editor will not select event info and frame info at the same time</div>
+</li>
+<li class="level2"><div class="li"> Add exSpriteAnimation::IsPlaying( string )</div>
+</li>
+<li class="level2"><div class="li"> Add exSpriteAnimation::IsPaused( string )</div>
+</li>
+<li class="level2"><div class="li"> Sprite Animation Editor draw preview and Frame fit the view size</div>
+</li>
+<li class="level2"><div class="li"> Can click any place in timeline scalar to drag needle in Sprite Animation Editor</div>
+</li>
+<li class="level2"><div class="li"> Click frame will let needle move on it</div>
+</li>
+<li class="level2"><div class="li"> Multi-select frames will play looping animation among them</div>
+</li>
+<li class="level2"><div class="li"> EventInfo Inspector move in top of FrameInfo Inspector</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Bugs Fixed</div>
+<ul>
+<li class="level2"><div class="li"> Fix Sprite, SpriteFont editing in Animation Window generate dummy frame keys</div>
+</li>
+<li class="level2"><div class="li"> Fix Sprite, SpriteFont editing in Animation Window will miss meshes</div>
+</li>
+<li class="level2"><div class="li"> Fix after building atlas, Sprite prefab will not be dirty that cause data not saves</div>
+</li>
+<li class="level2"><div class="li"> Fix layer will not update correctly when editing SpriteBase directly in prefab</div>
+</li>
+<li class="level2"><div class="li"> Fix Sprite Animation Inspector don&#039;t have way to change animation count</div>
+</li>
+<li class="level2"><div class="li"> Fix Sprite Animation Clip not trigger event in WrapMode.Loop</div>
+</li>
+<li class="level2"><div class="li"> Fix Import Compress Texture to Atlas shows Apply button</div>
+</li>
+<li class="level2"><div class="li"> Fix Atlas Editor and Animation Editor <acronym title="Graphical User Interface">GUI</acronym> focus can&#039;t changed</div>
+</li>
+<li class="level2"><div class="li"> Fix Atlas Editor delete Element will not rebuild Sprite Animation Clip</div>
+</li>
+<li class="level2"><div class="li"> Fix exLayer2D calculate depth value not relate with camera z position</div>
+</li>
+<li class="level2"><div class="li"> Fix width and height will reset to 512 when change selection in New Atlas state</div>
+</li>
+<li class="level2"><div class="li"> Fix change selection not repaint Saved Path in Atlas, Sprite Animation and BitmapFont editor</div>
+</li>
+<li class="level2"><div class="li"> Fix Atlas Editor change texture size not set need for rebuilding</div>
+</li>
+<li class="level2"><div class="li"> Fix Windows version can&#039;t use ctrl + mouse click for selection in both Atlas and Sprite Animation Editor</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "beta2" [271-2562] -->
+<h2 class="sectionedit4"><a name="beta" id="beta">beta</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> New Features</div>
+<ul>
+<li class="level2"><div class="li"> Atlas Editor</div>
+</li>
+<li class="level2"><div class="li"> Sprite Animation Clip Editor</div>
+</li>
+<li class="level2"><div class="li"> BitmapFont Editor</div>
+</li>
+<li class="level2"><div class="li"> Sprite render through Atlas assets</div>
+</li>
+<li class="level2"><div class="li"> Sprite Animation operates the SpriteAnimClip assets</div>
+</li>
+<li class="level2"><div class="li"> Sprite Font render through BitmapFont and AtlasFont assets</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "beta" [2563-] --></div>
+</body>
+</html>

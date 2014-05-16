@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>manual:architecture</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="date" content="2011-08-18T07:59:24-0500"/>
+<meta name="keywords" content="manual,architecture"/>
+<link rel="search" type="application/opensearchdescription+xml" href="../lib/exe/opensearch.html" title="ex2D Wiki"/>
+<link rel="start" href="../manual/architecture.html"/>
+<link rel="contents" href="../manual/architecture.html" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="../feed.html"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="../feed.mode.list.html?mode=list"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="../manual/architecture.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="../manual/architecture.html"/>
+<link rel="canonical" href="http://www.ex-dev.com/ex2d/wiki/doku.php?id=manual:architecture"/>
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php.t.default.css"/>
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php.s.all_t.default.css"/>
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php.s.print_t.default.css"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='manual';var JSINFO = {"id":"manual:architecture","namespace":"manual"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php.t.default.js"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="architecture_of_ex2d" id="architecture_of_ex2d">Architecture of ex2D</a></h1>
+<div class="level1">
+
+<p>
+<img src="../lib/exe/workingpipeline.jpg" class="mediacenter" alt="" />
+</p>
+
+<p>
+The ex2D Unity extension consists of 4 parts: Assets, Editors, Runtime Components and External Tools. These 4 parts compose the ex2D working pipeline in Unity, as displayed in the picture above. 
+</p>
+
+<p>
+<strong>Phase 1: Create raw data in External Tools</strong>
+</p>
+
+<p>
+Some assets are really easy to create and edit in external tools. For example textures, fonts and 2d skeleton/skinning animations. So in this phase we just use external tools to process data and import them into Unity editor.
+</p>
+
+<p>
+ex2D use BMFont(Windows) and Hiero(Mac) to generate bitmap font data, and in the near future we will add other external tools developed by exDev Studio into the pipeline. 
+</p>
+
+<p>
+<strong>Phase 2: Import and Edit Raw Data in Editor</strong>
+</p>
+
+<p>
+ex2D provides several editor classes inside Unity for assets editing, including Atlas Editor, Sprite Animation Clip Editor, Atlas Font Editor… These tools will be used in Phase 2 of our working pipeline. They all have a similar purpose: handle the Raw Data come from the Phase 1, and provide interface to adjust them to fit the project.
+</p>
+
+<p>
+<strong>Phase 3: Build and store the Assets for game</strong>
+</p>
+
+<p>
+Once you have finished assets editing in ex2D editors, your changes will be saved automatically in the project. Some assets will be built/rebuilt while saving. During a building process, ex2D will drop unnecessary data in the assets, and the final game build will be clean and minimum in size. For example the atlas will not reference original texture files after build, and sprite animation will reference sprites from atlas.
+</p>
+
+<p>
+<strong>Phase 4: Reference assets in the scene</strong>
+</p>
+
+<p>
+We have created and imported our assets in the previous phases. Now we need to use these assets. Think about other runtime Behavior/Components in Unity. Just like MeshFilter(component) needs Mesh(asset), Renderer(component) needs Material(asset), our Atlas asset will be used by Sprite Component, Sprite Animation Clip will be used by Sprite Animation Component, etc. With the help of ex2D, you can reference all the 2D assets easily and smoothly in your prefabs and scripts (just like using any other native Unity assets and components), making the whole process from design to making playable game build really fast and comfortable.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "Architecture of ex2D" [1-2272] -->
+<h1 class="sectionedit2"><a name="relationship_of_assets_editors_and_components" id="relationship_of_assets_editors_and_components">Relationship of Assets, Editors and Components</a></h1>
+<div class="level1">
+
+<p>
+<img src="../lib/exe/relation.png" class="mediacenter" alt="" />
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Relationship of Assets, Editors and Components" [2273-] --></div>
+</body>
+</html>
